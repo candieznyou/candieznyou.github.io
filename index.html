@@ -1,13 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employee Registration Form</title>
+  <link rel="stylesheet" href="external_registration.css" />
 </head>
 <body>
-    <div class="container">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium recusandae iste porro eveniet perferendis sequi est sit blanditiis dolorum corrupti aspernatur, cupiditate cum atque laboriosam amet dicta distinctio voluptatibus repellendus?</p>
-    </div>
+  <div class="form-container">
+    <h1>Registration Form</h1>
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required />
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required />
+
+        <label for="birthDate">Date of Birth:</label>
+        <input type="date" id="birthDate" name="birthDate" required />
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">-- Select --</option>
+          <option value="Female">Female</option>
+          <option value="Male">Male</option>
+          <option value="Other">Other</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contact Information</legend>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="address">Residential Address:</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Employment Details</legend>
+
+        <label for="employeeID">Employee ID:</label>
+        <input type="text" id="employeeID" name="employeeID" required />
+
+        <label for="position">Position:</label>
+        <input type="text" id="position" name="position" required />
+
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" required />
+
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" name="startDate" required />
+
+        <label for="employmentType">Employment Type:</label>
+        <select id="employmentType" name="employmentType" required>
+          <option value="">-- Select --</option>
+          <option value="Full-Time">Full-Time</option>
+          <option value="Part-Time">Part-Time</option>
+          <option value="Contractual">Contractual</option>
+          <option value="Intern">Intern</option>
+        </select>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
 </body>
 </html>
